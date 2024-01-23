@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.contenedor {
+  background-color: #131415;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  height: 450px;
+  background: #272d37;
+  color: aliceblue;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.card__imagen {
+  background-image: url(./img/Sin\ títADASDASDulo.jpg);
+  width: 100%;
+  height: 65%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.flash {
+  height: 350px;
+  position: absolute;
+  top: -180px;
+  left: -25px;
+  transition: all 0.3s ease;
+}
+
+.card__texto {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.card__boton {
+  align-self: flex-end;
+  background-color: transparent;
+  border: 1px solid rgb(161, 3, 224);
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.card__titulo {
+  background: rgb(171, 5, 236);
+  background: linear-gradient(
+    0deg,
+    rgba(171, 5, 236, 1) 0%,
+    rgba(239, 11, 196, 1) 89%,
+    rgba(23, 17, 22, 1) 175%
+  );
+  color: transparent;
+  background-clip: text;
+  font-size: 2rem;
+}
+
+.card__descripcion {
+  font-size: 0.8rem;
+  margin: 5px;
+}
+
+.card:hover {
+  box-shadow: 2px 2px 30px 5px rgb(157, 8, 142);
+}
+
+.flash:hover {
+  filter: drop-shadow(0px 0px 15px rgb(193, 14, 243));
+  top: -250px;
+}
+
+.card__boton:hover {
+  background: rgb(249, 9, 201);
+}
+
+a {
+  color: white;
+}
